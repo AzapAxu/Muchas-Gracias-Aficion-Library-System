@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffff00;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.KullaniciEkleController">
+   <children>
+      <TextField fx:id="yeniKullaniciAd" layoutX="200.0" layoutY="110.0" promptText="Ad" />
+      <TextField fx:id="yeniKullaniciSoyad" layoutX="200.0" layoutY="170.0" promptText="Soyad" />
+      <TextField fx:id="yeniKullaniciKullaniciAd" layoutX="200.0" layoutY="230.0" promptText="Kullanıcı Adı" />
+      <Label layoutX="91.0" layoutY="14.0" text="Eklenecek Kullanıcının;">
+         <font>
+            <Font name="Tahoma" size="42.0" />
+         </font>
+      </Label>
+      <Label layoutX="118.0" layoutY="175.0" text="Soyadı :" />
+      <Label layoutX="81.0" layoutY="235.0" text="Kullanıcı Adı :" />
+      <Label layoutX="121.0" layoutY="295.0" text="Şifresi :" />
+      <Label layoutX="140.0" layoutY="115.0" text="Adı :" />
+      <PasswordField fx:id="yeniKullaniciSifre" layoutX="200.0" layoutY="290.0" promptText="Şifre" />
+      <Button fx:id="kullaniciEkleButton" layoutX="81.0" layoutY="350.0" mnemonicParsing="false" onAction="#yeniKullaniciEkle" prefHeight="31.0" prefWidth="187.0" style="-fx-background-color: #ff0000;" text="Yeni Kullanıcı Ekle" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="kullaniciEklendiLabel" layoutX="156.0" layoutY="74.0" prefHeight="28.0" prefWidth="288.0" text="Yeni Kullanıcı Başarıyla Eklendi." textFill="LIME" visible="false">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="kullaniciEkleAnaMenuButton" layoutX="301.0" layoutY="350.0" mnemonicParsing="false" onAction="#adminAnaMenu" prefHeight="31.0" prefWidth="187.0" style="-fx-background-color: #ff0000;" text="Ana Menüye Dön" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="kullaniciEklenemediLabel" layoutX="178.0" layoutY="67.0" prefHeight="28.0" prefWidth="231.0" text="Bu Kullanıcı Adı Alınmış!" textFill="RED" visible="false">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

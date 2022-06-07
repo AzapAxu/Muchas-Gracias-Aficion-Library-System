@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="640.0" style="-fx-background-color: #bffffb;" styleClass="#bffffb#00ff62" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.FXMLAdminArayuzController">
+   <children>
+      <Label layoutX="15.0" layoutY="38.0" text="Yapmak istediğiniz işlemi seçiniz:">
+         <font>
+            <Font name="Tahoma" size="42.0" />
+         </font>
+      </Label>
+      <Button fx:id="kullaniciEkleButton" layoutX="10.0" layoutY="120.0" mnemonicParsing="false" onAction="#kullaniciEklemeEkrani" prefHeight="90.0" prefWidth="180.0" style="-fx-background-color: #fac011;" text="Kullanıcı Ekle" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Button>
+      <Button fx:id="kullaniciSilButton" layoutX="225.0" layoutY="120.0" mnemonicParsing="false" onAction="#kullaniciSilmeEkrani" prefHeight="90.0" prefWidth="180.0" style="-fx-background-color: #fac011;" text="Kullanıcı Sil" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Button>
+      <Button fx:id="kitapEkleButton" layoutX="440.0" layoutY="120.0" mnemonicParsing="false" onAction="#kitapEkle" prefHeight="90.0" prefWidth="180.0" style="-fx-background-color: #fac011;" text="Kitap Ekle" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Button>
+      <Button fx:id="kitapSilButton" layoutX="10.0" layoutY="240.0" mnemonicParsing="false" onAction="#kitapSil" prefHeight="90.0" prefWidth="180.0" style="-fx-background-color: #fac011;" text="Kitap Sil" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Button>
+      <Button fx:id="kullaniciGosterButton" layoutX="225.0" layoutY="240.0" mnemonicParsing="false" onAction="#kullaniciListesiGoster" prefHeight="90.0" prefWidth="180.0" style="-fx-background-color: #fac011;" text="Kullanıcıları Göster" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Button>
+      <Button fx:id="adminAnaMenuButton" layoutX="440.0" layoutY="240.0" mnemonicParsing="false" onAction="#anaMenuyeDon" prefHeight="90.0" prefWidth="180.0" style="-fx-background-color: #fac011;" text="Giriş Ekranına Dön" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

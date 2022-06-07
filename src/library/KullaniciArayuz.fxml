@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f5fa00;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.KullaniciArayuzController">
+   <children>
+      <Label layoutX="6.0" layoutY="14.0" text="Yapmak istediğiniz işlemi seçiniz:">
+         <font>
+            <Font name="Tahoma" size="42.0" />
+         </font>
+      </Label>
+      <Button fx:id="kitapGosterButton" layoutX="60.0" layoutY="130.0" mnemonicParsing="false" onAction="#kitapGoster" prefHeight="90.0" prefWidth="180.0" style="-fx-background-color: #000000;" text="Kitapları Göster" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="kitapBırakButton" layoutX="60.0" layoutY="278.0" mnemonicParsing="false" onAction="#kitapBirak" prefHeight="90.0" prefWidth="180.0" style="-fx-background-color: #000000;" text="Kitap Bırak" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="kitapAlButton" layoutX="340.0" layoutY="130.0" mnemonicParsing="false" onAction="#kitapAl" prefHeight="90.0" prefWidth="180.0" style="-fx-background-color: #000000;" text="Kitap Al" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="anaMenuyeDonButton" layoutX="340.0" layoutY="278.0" mnemonicParsing="false" onAction="#anaMenuyeDon" prefHeight="90.0" prefWidth="180.0" style="-fx-background-color: #000000;" text="Giriş Ekranına Dön" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

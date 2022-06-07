@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffff00;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.KitapEkleController">
+   <children>
+      <Button fx:id="kitapEkleAnaMenuButton" layoutX="399.0" layoutY="355.0" mnemonicParsing="false" onAction="#adminAnaMenu" prefHeight="31.0" prefWidth="187.0" style="-fx-background-color: #ff0000;" text="Ana Menüye Dön" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="218.0" text="Kitap Ekle">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="136.0" layoutY="76.0" text="Eklemek İstediğiniz kitabın;">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="152.0" layoutY="122.0" text="Adı :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="129.0" layoutY="171.0" text="Yazarı :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="bookName" layoutX="221.0" layoutY="121.0" promptText="Kitap Adı" />
+      <TextField fx:id="bookAuthor" layoutX="221.0" layoutY="170.0" promptText="Yazar Adı" />
+      <Button fx:id="kitapEkleButton" layoutX="221.0" layoutY="271.0" mnemonicParsing="false" onAction="#yeniKitapEkle" prefHeight="31.0" prefWidth="187.0" style="-fx-background-color: #ff0000;" text="Yeni Kitap Ekle" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="kitapEklendiLabel" layoutX="172.0" layoutY="44.0" text="Yeni Kitap Başarıyla Eklendi." textFill="LIME" visible="false">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="bookPage" layoutX="221.0" layoutY="222.0" promptText="Sayfa Sayısı" />
+      <Label layoutX="81.0" layoutY="223.0" text="Sayfa Sayısı :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

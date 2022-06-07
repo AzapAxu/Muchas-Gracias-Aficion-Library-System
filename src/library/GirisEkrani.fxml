@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="AnchorPane" prefHeight="400.0" prefWidth="640.0" style="-fx-background-color: #fcc5fb;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.FXMLDocumentController">
+    <children>
+        <Label fx:id="hataliGiris" layoutX="133.0" layoutY="179.0" minHeight="16" minWidth="69" text="Kullanıcı adı veya şifre yanlış.Lütfen tekrar deneyiniz." textFill="RED" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="4.0" layoutY="97.0" text="KÜTÜPHANE SİSTEMİNE HOŞGELDİNİZ">
+         <font>
+            <Font name="Gabriola" size="49.0" />
+         </font>
+      </Label>
+      <Label layoutX="2.0" layoutY="6.0" text="MUCHAS GRACIAS AFICION">
+         <font>
+            <Font name="Gabriola" size="69.0" />
+         </font>
+      </Label>
+      <Label layoutX="150.0" layoutY="225.0" text="Kullanıcı adı : " />
+      <Label layoutX="200.0" layoutY="274.0" text="Şifre : " />
+      <TextField fx:id="usernameField" layoutX="266.0" layoutY="220.0" promptText="Kullanıcı Adı" />
+      <PasswordField fx:id="passField" layoutX="266.0" layoutY="269.0" promptText="Şifre" />
+      <Button fx:id="adminGirisButton" defaultButton="true" layoutX="345.0" layoutY="355.0" onAction="#adminGiris" prefHeight="31.0" prefWidth="108.0" style="-fx-background-color: #f7fa64;" text="Admin Girişi">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="girisButton" defaultButton="true" layoutX="345.0" layoutY="309.0" onAction="#kullaniciGiris" prefHeight="31.0" prefWidth="108.0" style="-fx-background-color: #f7fa64;" text="Giriş Yap">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+    </children>
+</AnchorPane>

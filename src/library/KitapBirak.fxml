@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffff00;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.KitapBirakController">
+   <children>
+      <Label alignment="CENTER" layoutX="5.0" prefHeight="58.0" prefWidth="600.0" text="Kitap Bırak">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="134.0" prefHeight="25.0" prefWidth="373.0" text="Bırakmak istediğiniz kitabın adı : ">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="kitapAdi" layoutX="379.0" layoutY="137.0" promptText="Kitap Adı" />
+      <Button fx:id="kitapBirakButton" layoutX="379.0" layoutY="185.0" mnemonicParsing="false" onAction="#kitapBirak" prefHeight="31.0" prefWidth="187.0" style="-fx-background-color: #ff0000;" text="Kitabı Bırak" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="kitapBirakAnaMenuButton" layoutX="428.0" layoutY="355.0" mnemonicParsing="false" onAction="#kullaniciAnaMenu" prefHeight="31.0" prefWidth="157.0" style="-fx-background-color: #ff0000;" text="Ana Menüye Dön" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="kitapBirakildi" layoutX="163.0" layoutY="64.0" text="Kitap başarıyla bırakıldı." textFill="LIME" visible="false">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="kitapSizinDegil" layoutX="156.0" layoutY="64.0" text="Bu kitaba sahip değilsiniz." textFill="RED" visible="false">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="kitapYok" layoutX="105.0" layoutY="58.0" text="Sistemimizde bu isimde bir kitap yoktur." textFill="RED" visible="false">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

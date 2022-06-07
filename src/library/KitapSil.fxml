@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffff00;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.KitapSilController">
+   <children>
+      <Label layoutX="223.0" text="Kitap Sil">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="134.0" layoutY="101.0" text="Silmek İstediğiniz kitabın;">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="145.0" layoutY="155.0" text="Adı :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="bookName" layoutX="207.0" layoutY="155.0" promptText="Kitap Adı" />
+      <Button fx:id="kitapSilButton" layoutX="207.0" layoutY="200.0" mnemonicParsing="false" onAction="#kitapSil" prefHeight="31.0" prefWidth="187.0" style="-fx-background-color: #ff0000;" text="Kitap Sil" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="kitapEkleAnaMenuButton" layoutX="409.0" layoutY="365.0" mnemonicParsing="false" onAction="#adminAnaMenu" prefHeight="31.0" prefWidth="187.0" style="-fx-background-color: #ff0000;" text="Ana Menüye Dön" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="kitapSilindiLabel" layoutX="144.0" layoutY="58.0" text="Kitap Başarıyla Silindi." textFill="LIME" visible="false">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="kitapSilinmediLabel" layoutX="169.0" layoutY="58.0" text="Kitap Bulunamadı!" textFill="RED" visible="false">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

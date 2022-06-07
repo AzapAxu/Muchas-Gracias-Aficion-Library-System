@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffff00;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.KitapGosterController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutY="3.0" prefHeight="58.0" prefWidth="627.0" text="Kitap Listesi">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <ListView fx:id="kitapListView" editable="true" layoutX="175.0" layoutY="61.0" prefHeight="349.0" prefWidth="250.0" />
+      <Button fx:id="kitapYenileButton" layoutY="365.0" mnemonicParsing="false" onAction="#kitapYenile" prefHeight="31.0" prefWidth="157.0" style="-fx-background-color: #ff0000;" text="Kitapları Yenile" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="kitapListeAnaMenuButton" layoutX="443.0" layoutY="365.0" mnemonicParsing="false" onAction="#kullaniciAnaMenu" prefHeight="31.0" prefWidth="157.0" style="-fx-background-color: #ff0000;" text="Ana Menüye Dön" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="sizeLabel" layoutX="287.0" layoutY="67.0" style="-fx-background-color: #ffffff;" text="Kitap Sayısı : ">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Button fx:id="kitapSiralaButton" layoutY="324.0" mnemonicParsing="false" onAction="#kitapSirala" prefHeight="31.0" prefWidth="157.0" style="-fx-background-color: #ff0000;" text="Kitapları Sırala" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="kitapAra" layoutX="3.0" layoutY="62.0" prefHeight="31.0" prefWidth="167.0" promptText="Aradığınız Kitabın Adı" />
+      <Button fx:id="kitapAraButton" layoutX="3.0" layoutY="101.0" mnemonicParsing="false" onAction="#kitapAra" prefHeight="31.0" prefWidth="167.0" style="-fx-background-color: #ff0000;" text="Kitap Ara" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="bulunduLabel" layoutX="3.0" layoutY="32.0" prefHeight="26.0" prefWidth="212.0" text="Aradığınız kitap bulundu." textFill="LIME" visible="false">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label fx:id="bulunamadiLabel" layoutX="7.0" layoutY="35.0" text="Aradığınız kitap bulunamadı." textFill="RED" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

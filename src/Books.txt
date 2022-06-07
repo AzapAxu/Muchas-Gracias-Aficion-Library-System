@@ -1,0 +1,5 @@
+af af null 4
+ag ag null 4
+Nutuk Mustafa-Kemal-Atatürk null 320
+as as null 34
+Sefiller Victor-Hugo null 500

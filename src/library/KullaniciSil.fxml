@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffff00;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.KullaniciSilController">
+   <children>
+      <Label layoutX="14.0" layoutY="125.0" text="Silmek istediğiniz kullanıcının kullanıcı adı :" />
+      <Label layoutX="188.0" layoutY="14.0" text="Kullanıcı Sil">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <TextField fx:id="username" layoutX="309.0" layoutY="120.0" promptText="Kullanıcı Adı" />
+      <Button fx:id="kullaniciSilButton" layoutX="309.0" layoutY="169.0" onAction="#kullaniciSil" prefHeight="31.0" prefWidth="187.0" style="-fx-background-color: #ff0000;" text="Kullanıcı Sil" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="anaMenuButton" layoutX="443.0" layoutY="355.0" mnemonicParsing="false" onAction="#adminAnaMenu" style="-fx-background-color: #ff0000;" text="Ana Menüye Dön" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="kullaniciSilHataLabel" layoutX="168.0" layoutY="69.0" text="Kullanıcı bulunamadı!" textFill="RED" visible="false">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="kullaniciSilindiLabel" layoutX="149.0" layoutY="69.0" text="Kullanıcı başarıyla silindi." textFill="LIME" visible="false">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

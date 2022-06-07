@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffff00;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.KullaniciListesiController">
+   <children>
+      <Label alignment="CENTER" layoutX="2.0" layoutY="-7.0" prefHeight="58.0" prefWidth="586.0" text="Kullanıcı Listesi">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <Accordion layoutX="162.0" layoutY="125.0" />
+      <ListView fx:id="mListView" editable="true" layoutX="175.0" layoutY="51.0" prefHeight="349.0" prefWidth="250.0" />
+      <Button fx:id="kullaniciEkleAnaMenuButton" layoutX="443.0" layoutY="355.0" mnemonicParsing="false" onAction="#adminAnaMenu" prefHeight="31.0" prefWidth="157.0" style="-fx-background-color: #ff0000;" text="Ana Menüye Dön" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="kullaniciYenileButton" layoutY="355.0" mnemonicParsing="false" onAction="#kullaniciYenile" prefHeight="31.0" prefWidth="157.0" style="-fx-background-color: #ff0000;" text="Kullanıcıları Yenile" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="sizeLabel" layoutX="278.0" layoutY="57.0" style="-fx-background-color: #ffffff;" text="Kullanıcı Sayısı : ">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
